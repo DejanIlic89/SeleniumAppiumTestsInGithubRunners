@@ -25,6 +25,7 @@ jobs:
     steps:
       - run: echo ${{ inputs.text }}
       - run: echo ${{ github.event.inputs.text }}
+      - run: echo ${{ github.event_name }}
       - run: echo ${{ github.actor }}
       - run: echo 'Hi ${{ env.firstName }}'
       - run: echo 'website - ${{ env.website }}'
