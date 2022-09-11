@@ -1,7 +1,5 @@
 name : context demo
 on:
-  schedule:
-    - cron: '37 0 * * *'
   workflow_dispatch:
     inputs:
       text:
